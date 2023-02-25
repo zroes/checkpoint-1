@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" role="favicon" href="https://www.crustpizzaco.com/assets/theme/cpc/images/pizza-main.png">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
@@ -30,10 +31,11 @@
 
 
   <main class="container-fluid">
-    <div class="row hero-image pt-5">
-      <div class="col-md-4">
-        <form class="row bg-form py-4 mx-1">
+    <div class="row hero-image py-2">
+      <div class="col-md-4 align-self-center">
+        <form class="row bg-form pt-2 pb-4 mx-1 d-flex align-items-center">
           <div class="my-2 col-12">
+            <label class="py-2 fw-bold color-primary">Contact Us!</label>
             <input type="text" class="form-control" placeholder="NAME">
           </div>
           <div class="my-2 col-12">
@@ -50,7 +52,6 @@
             <textarea id="text" name="text" class="form-control" rows="5" placeholder="MESSAGE"
               required="true"></textarea>
           </div>
-
           <div class="my-2 col-12">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck" required="true">
@@ -60,9 +61,15 @@
             </div>
           </div>
           <div class="my-2 col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-pizza">Submit</button>
           </div>
         </form>
+      </div>
+      <div class="d-none d-md-block col-md-8 p-5 mt-5">
+        <h3 class="hero-text-heading">Pizza, placed.</h3>
+        <p class="hero-text-p p-2">Right at your table, ready to eat. Lorem ipsum dolor sit amet consectetur
+          adipisicing.
+        </p>
       </div>
     </div>
 
@@ -90,7 +97,7 @@
           <div class="progress-bar text-start pizza-prog" style="width: 36%">Customer Service</div>
         </div>
       </div>
-      <div class="col-md-6 mt-3 p-3">
+      <div class="col-md-6 mt-3 p-3 px-md-5">
         <h1>Here's why our pizza is the BEST!</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis vitae ex eos fugiat.</p>
       </div>
@@ -113,25 +120,39 @@
       </div>
     </section>
 
-    <section class="row d-flex justify-content-around align-items-center bg-mediumer p-3 py-10">
-      <div class="col-md-3 text-center mx-md-4 bg-lighter pizza-card py-5">
+    <section class="row d-flex justify-content-around align-items-center bg-mediumer p-3 py-md-5 py-4">
+      <div class="col-md-3 text-center mx-md-4 bg-lighter pizza-card order-1 order-md-0 py-5 mb-4 mb-md-0">
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius qui facere quis voluptatum molestiae
           quo.</h4>
       </div>
-      <div class="col-md-3 text-center mx-md-4 bg-lighter card-middle py-5">
-        <h4><span class="iconify" data-icon="mdi-star-circle"></span><span class="iconify"
-            data-icon="mdi-star-circle"></span><span class="iconify" data-icon="mdi-star-circle"></span><br>
+      <div class="col-md-3 text-center mx-md-4 bg-lighter card-middle py-5 mb-4 mb-md-0">
+        <h4><span class="iconify star-color" data-icon="mdi-star-circle"></span><span class="iconify star-color"
+            data-icon="mdi-star-circle"></span><span class="iconify star-color" data-icon="mdi-star-circle"></span><br>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius qui facere quis voluptatum molestiae
           quo.</h4>
       </div>
-      <div class="col-md-3 text-center mx-md-4 bg-lighter pizza-card py-5">
+      <div class="col-md-3 text-center mx-md-4 bg-lighter pizza-card py-5 mb-4 mb-md-0">
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius qui facere quis voluptatum molestiae
           quo.</h4>
       </div>
     </section>
 
     <!-- TODO work on footer and finishing touches -->
+    <section class="row pizza-bg-primary">
+      <div class="col-12 py-5 px-3 text-center text-md-start">
+        <h3 class="end-card-header">ORDER NOW!</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequatur!</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="container-fluid">
+    <section class="row bg-mediumer">
+      <div class="col-12 text-center py-3">
+        <p class="fw-bold my-3">Made with 🍕 by Pizza Placed Inc.</p>
+      </div>
+    </section>
+  </footer>
 
 </body>
 

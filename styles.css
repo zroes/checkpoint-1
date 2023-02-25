@@ -15,7 +15,7 @@ h2 {
 .hero-image {
   background-image: url("https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2869&q=80");
   background-size: 120%;
-  height: 70vh;
+  min-height: 70vh;
   width: 100vw;
   background-position: center;
 }
@@ -33,47 +33,71 @@ h2 {
   padding-left: 1em;
 }
 
+.hero-text-heading {
+  font-weight: bolder;
+  font-size: 52pt;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ff4800;
+  text-shadow: 3px 4px 3px rgba(43, 10, 3, 0.816);
+  /* -webkit-text-stroke: 0.00001em #9b3400;
+  -webkit-text-fill-color: #ff5300; */
+}
+
+.hero-text-p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22pt;
+  color: #2a260bd7;
+  background-color: #ece3d3b5;
+  border-radius: 0.5em;
+  box-shadow: 2px 4px 10px rgba(58, 58, 58, 0.337);
+}
+
 .bg-lighter {
   background-color: #ECE3D3;
 }
 
 .bg-mediumer {
-  background-color: #C09371;
+  background-color: #e9d0b4;
 }
 
 .bg-form {
   background-color: rgba(250, 244, 227, 0.729);
+  box-shadow: 2px 4px 10px rgba(89, 89, 89, 0.337);
   border-radius: 0.4em;
 }
 
 .pizza-card {
-  color: #3c362a;
+  color: #3c362ac5;
   border-radius: 0.5em;
-  box-shadow: 2px 2px 10px rgba(89, 89, 89, 0.337);
+  box-shadow: 2px 4px 10px rgba(89, 89, 89, 0.337);
   max-height: 30vh;
 }
 
 .card-middle {
-  color: #3c362a;
+  color: #3c362ae5;
   border-top: 20px solid #ECE3D3;
   border-bottom: 20px solid #ECE3D3;
   border-radius: 0.5em;
-  box-shadow: 2px 2px 10px rgba(89, 89, 89, 0.337);
+  box-shadow: 2px 4px 10px rgba(89, 89, 89, 0.337);
 }
 
 .graph {
   position: relative;
 }
 
-.py-10 {
+.color-primary {
+  color: #5a1d0a;
+}
+
+/* .py-10 {
   padding-top: 5em !important;
   padding-bottom: 5em !important;
-}
+} */
 
 .img-chef {
   height: 60vh;
   border-radius: 0.5em;
-  box-shadow: 2px 2px 10px rgba(89, 89, 89, 0.337);
+  box-shadow: 2px 4px 10px rgba(89, 89, 89, 0.337);
 }
 
 .h-chef {
@@ -89,6 +113,24 @@ h2 {
 .pizza-nav {
   border-bottom: 6px solid #511807;
 }
+
+.star-color {
+  color: #5A1D0A;
+}
+
+.end-card-header {
+  font-size: 35pt;
+}
+
+.btn-pizza {
+  --bs-btn-color: #fff5e4;
+  --bs-btn-bg: #ff4800;
+  --bs-btn-hover-bg: #f34500;
+  --bs-btn-hover-color: #ECE3D3;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #df3f00;
+}
+
 
 @media (min-width:768px) {
   .img-chef {
